@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class FooController extends Controller {
+class MessageController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,7 +15,6 @@ class FooController extends Controller {
 	public function index()
 	{
 		//
-		echo 1;
 	}
 
 	/**
@@ -82,9 +81,4 @@ class FooController extends Controller {
 		//
 	}
 
-	public function anyIndex()
-    {
-        //
-        echo 1;
-    }
 }

@@ -30,8 +30,6 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		$value = \Config::get('foobar.foo');
-		error_log($value);
 		return view('welcome');
 	}
 
