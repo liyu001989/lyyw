@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class MessageController extends Controller {
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -14,7 +19,9 @@ class MessageController extends Controller {
 	 */
 	public function index()
 	{
-		//
+
+		$messages = \App\Message::with('user')->orderBy('created_at', 'desc')->simplePaginate(15);
+		return view('messages.list', ['messages' => $messages]);
 	}
 
 	/**
@@ -32,9 +39,23 @@ class MessageController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$this->validate($request, [
+	        'message-content' => 'required|max:255',
+	    ]);
+
+
+		$message = new \App\Message;
+		$content = $request->input('message-content');
+		$user = \App\User::find(1);
+
+		$message->content = $content;
+		$message->user()->associate($user);
+		$message->save();
+
+		return redirect('message');
+
 	}
 
 	/**

@@ -8,10 +8,17 @@ class UserTableSeeder extends Seeder {
 
     public function run()
     {
-        DB::table('users')->where('id', '>', 1)->delete();
-        User::create(['email' => 'foo@bar.com']);
-        User::create(['email' => 'foo@bar1.com']);
-        User::create(['email' => 'foo@bar2.com']);
+    	DB::table('users')->truncate();
+        $num = 3;
+        for($i = 0; $i<$num; $i++) {
+            $data = [
+                'name' => 'foo'.$i,
+                'email' => "foo@bar{$i}.com",
+                'password' => bcrypt('123456')
+            ];
+
+            User::create($data);
+        }
 
         $this->call('MessageTableSeeder');
     }
