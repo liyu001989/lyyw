@@ -48,7 +48,8 @@ class MessageController extends Controller {
 
 		$message = new \App\Message;
 		$content = $request->input('message-content');
-		$user = \App\User::find(1);
+		// $user = \Auth::user();
+		$user = $request->user();
 
 		$message->content = $content;
 		$message->user()->associate($user);

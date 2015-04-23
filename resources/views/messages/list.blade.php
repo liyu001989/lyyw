@@ -1,3 +1,7 @@
+@extends('app')
+
+@section('content')
+<div class="container-fluid">
 <form method="POST" action="message">
     <label>message</label>
     <input name="message-content">
@@ -14,3 +18,6 @@
 @endforeach
 
 <?php echo $messages->setPath('message')?>
+</div>
+
+@endsection

@@ -1,0 +1,8 @@
+{
+  "name": "laravel",
+  "dependencies": {
+    "bootstrap": "3.*",
+    "font-awesome": "4.*",
+    "requirejs": "2.*"
+  }
+}
