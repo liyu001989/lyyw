@@ -48,6 +48,7 @@ class MessageController extends Controller {
 
 		$message = new \App\Message;
 		$content = $request->input('message-content');
+		// 可以使用auth和request
 		// $user = \Auth::user();
 		$user = $request->user();
 
