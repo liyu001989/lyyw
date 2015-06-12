@@ -17,7 +17,8 @@
     </div>
 @endforeach
 
-<?php echo $messages->setPath('message')?>
+<?php echo $messages->render(); ?>
+
 </div>
 
 @endsection
