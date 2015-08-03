@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Carbon\Carbon;
-use Queue;
-use Log;
+use App\Models\Message;
+use App\Models\Users;
 
 class MessageController extends Controller
 {
@@ -20,7 +20,7 @@ class MessageController extends Controller
      */
     public function index()
     {
-        $messages = \App\Message::with('user')->orderBy('created_at', 'desc')->paginate(10);
+        $messages = Message::with('user')->orderBy('created_at', 'desc')->paginate(10);
 
         return view('messages.list', ['messages' => $messages]);
     }
@@ -32,10 +32,6 @@ class MessageController extends Controller
     public function create()
     {
         //
-        if ($a = 1) {
-            echo 123;
-            echo 2;
-        }
     }
 
     /**
@@ -49,7 +45,7 @@ class MessageController extends Controller
             'message-content' => 'required|max:255',
         ]);
 
-        $message = new \App\Message();
+        $message = new Message();
         $content = $request->input('message-content');
         // 可以使用auth和request
         // $user = \Auth::user();
