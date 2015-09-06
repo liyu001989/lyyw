@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LS</title>
+    <title>@yield('title', 'LYYW')</title>
 
     <link href="favicon.ico" rel="icon">
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/semantic.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/font-awesome.min.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,7 +21,7 @@
     <script data-main="{{ asset('/js/main.js') }}" src="{{ asset('/js/require.js') }}"></script>
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    {{-- <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -54,12 +54,45 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> --}}
+    <div class="ui menu">
+
+        <div class="header item">
+            <a href="{{ url('/') }}"><img width="16px" height="16px" src="{{ asset('image/logo.png') }}"> LYYW</a>
+        </div>
+        <a class="item" href="{{ url('/message') }}">Message</a>
+        {{-- <div class="ui dropdown item" tabindex="0">
+            Dropdown
+            <i class="dropdown icon"></i>
+            <div class="menu transition hidden" tabindex="-1">
+            <div class="item">Another Action</div>
+            <div class="item">Something else here</div>
+            <div class="divider"></div>
+            <div class="item">Separated Link</div>
+            <div class="divider"></div>
+            <div class="item">One more separated link</div>
+        </div> --}}
+        <div class="right menu">
+            @if (Auth::guest())
+                <a class="item" href="{{ url('/auth/login') }}">Login</a>
+                <a class="item" href="{{ url('/auth/register') }}">Register</a>
+            @else
+                <div class="ui dropdown item" tabindex="0">
+                    {{ Auth::user()->name }}
+                    <i class="dropdown icon"></i>
+                    <div class="menu transition hidden" tabindex="-1">
+                        <div class="item"><a href="{{ url('/auth/logout') }}">Logout</a></div>
+                    </div>
+                </div>
+            @endif
+        </div>
+    </div>
 
     @yield('content')
 
-    <!-- Scripts -->
+    <!-- Scripts
     <script src="{{ asset('/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/js/semantic.min.js') }}"></script>
+    -->
 </body>
 </html>

@@ -3,6 +3,7 @@
   "dependencies": {
     "bootstrap": "3.*",
     "font-awesome": "4.*",
-    "requirejs": "2.*"
+    "requirejs": "2.*",
+    "semantic": "~2.1.3"
   }
 }

@@ -21,8 +21,11 @@ elixir(function(mix) {
 
 elixir(function(mix) {
     //bootstrap
-    mix.copy('resources/assets/bower/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js');
-    mix.copy('resources/assets/bower/bootstrap/dist/css/bootstrap.min.css', 'public/css/bootstrap.min.css');
+    //mix.copy('resources/assets/bower/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js');
+    //mix.copy('resources/assets/bower/bootstrap/dist/css/bootstrap.min.css', 'public/css/bootstrap.min.css');
+    //semantic
+    mix.copy('resources/assets/bower/semantic/dist/semantic.min.css', 'public/css/semantic.min.css');
+    mix.copy('resources/assets/bower/semantic/dist/semantic.min.js', 'public/js/semantic.min.js');
     //font-awesome
     mix.copy('resources/assets/bower/font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.min.css');
     mix.copy('resources/assets/bower/font-awesome/fonts', 'public/fonts');

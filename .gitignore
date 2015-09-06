@@ -3,3 +3,4 @@
 /resources/assets/bower
 .env
 *.DS_Store
+*.log
