@@ -6,7 +6,12 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*",
+        "guzzlehttp/guzzle": "~6.0",
+        "baum/baum": "~1.1",
+        "nesbot/carbon": "^1.20",
+        "barryvdh/laravel-debugbar": "^2.0",
+        "socialiteproviders/douban": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

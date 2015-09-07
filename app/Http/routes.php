@@ -11,14 +11,27 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+// Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
+Route::get('/', 'HomeController@index');
+
+Route::get('auth/social/{source}', [
+    'as'   => 'auth.social.redirect',
+    'uses' => 'Auth\SocialController@redirect'
+]);
+
+Route::get('auth/social/callback/{source}', [
+    'as'   => 'auth.social.callback',
+    'uses' => 'Auth\SocialController@callback'
+]);
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
 ]);
 
 Route::get('message', 'MessageController@index');
 Route::post('message', 'MessageController@store');
+
+
+

@@ -15,8 +15,8 @@ return [
     */
 
     'mailgun' => [
-        'domain' => '',
-        'secret' => '',
+        'domain' => 'sandbox4b5bf8768b0a4f25be3da462c8f996ee.mailgun.org',
+        'secret' => 'key-d1392cb609e60b0fdf7d109d0cc6106f',
     ],
 
     'mandrill' => [
@@ -35,4 +35,15 @@ return [
         'secret' => '',
     ],
 
+
+    'douban' => [
+        'client_id'     => '03b6db5d7a24434d0b2492186e6cc9e7',
+        'client_secret' => '8036f78983f237af',
+        'redirect'      => 'http://www.lyyw.test/auth/social/callback/douban',
+    ],
+    'github' => [
+        'client_id'     => 'de7bc379179a2ae7315c',
+        'client_secret' => '5145ecbf9a58042e663a0ff5bb026e4dd3b73e72',
+        'redirect'      => 'http://www.lyyw.test/auth/social/callback/github',
+    ],
 ];
