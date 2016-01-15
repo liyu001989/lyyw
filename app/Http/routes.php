@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('foo', function () {
+    return view('marry.index');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -26,6 +31,6 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
-});
+// Route::group(['middleware' => ['web']], function () {
+//     //
+// });

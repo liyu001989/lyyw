@@ -1,0 +1,23 @@
+{
+  "name": "lyyw",
+  "description": "",
+  "main": "",
+  "authors": [
+    "liyu001989@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/liyu001989/lyyw",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "~2.1.8"
+  }
+}
