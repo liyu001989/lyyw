@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>marry</title>
+<head>
+    <title>marry</title>
+    <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
+    <link href="{{ asset('assets/bower/semantic/dist/semantic.min.css') }}" type="text/css" rel="stylesheet">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">lyyw marry</div>
-            </div>
+    <script src="{{ asset('assets/bower/requirejs/require.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+</head>
+<body>
+    <div class="ui borderless main menu">
+        <a class="toc item">
+            <i class="sidebar icon"></i>
+        </a>
+        <div class="ui text container">
+          <div class="header item" href="#">
+            <img src="{{ asset('images/logo.png') }}" class="logo">
+            LYYW
+          </div>
+          <a class="item" href="#">ABOUT</a>
+          <a class="item" href="#">PORTFOLIO</a>
+          <a class="item" href="#">CONTACT</a>
         </div>
-    </body>
+    </div>
+    <div class="ui sidebar inverted vertical menu left uncover">
+        <a class="item">Home</a>
+        <a class="item">ABOUT</a>
+        <a class="item">PORTFOLIO</a>
+        <a class="item">CONTACT</a>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+          <div class="ui stackable inverted divided grid">
+
+          </div>
+        </div>
+    </div>
+</body>
 </html>
