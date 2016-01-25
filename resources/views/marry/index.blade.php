@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>marry</title>
-    <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
     <link href="{{ asset('assets/bower/semantic/dist/semantic.min.css') }}" type="text/css" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
 
     <script src="{{ asset('assets/bower/requirejs/require.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
@@ -43,21 +43,111 @@
                 <i class="sidebar icon"></i>
             </a>
             <div class="ui text container">
-              <div class="header item" href="#">
-                <img src="{{ asset('images/logo.png') }}" class="logo">
+                <div class="header item" href="#">
+                    <img src="{{ asset('images/logo.png') }}" class="logo">
                 LYYW
-              </div>
-              <a class="item" href="#">ABOUT</a>
-              <a class="item" href="#">PORTFOLIO</a>
-              <a class="item" href="#">CONTACT</a>
+                </div>
+                <a class="item" href="#">ABOUT</a>
+                <a class="item" href="#">PORTFOLIO</a>
+                <a class="item" href="#">CONTACT</a>
             </div>
         </div>
 
-        <div class="ui inverted vertical footer segment">
-            <div class="ui center aligned container">
-              <div class="ui stackable inverted divided grid">
+        <div class="ui grid center">
+            <img src="{{ asset('images/header.jpg') }}" class="ui image full">
+            <div class="main-title">
+                <img src="{{ asset('images/flower.png') }}" class="ui image">
+                <div class="">LYYW MARRY</div>
+                <p>
+                <span style="letter-spacing:0.1em;">WEDDING PHOTOGRAPHY</span>
+                </p>
+            </div>
+            </div>
 
-              </div>
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <img src="{{ asset('images/me.jpg') }}" class="ui image">
+                </div>
+            <div class="eight wide column">
+                <div style="width: 350px">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                </div>
+                <div style="width: 350px">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                </div>
+                <div style="width: 350px">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                </div>
+            </div>
+        </div>
+
+        <div class="ui grid no-padding">
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+            <div class="four wide column">
+                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            </div>
+        </div>
+
+        <div class="ui grid">
+            <div class="eight wide column">
+                <div style="width: 350px">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                </div>
+                <div style="width: 350px">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                </div>
+                <div style="width: 350px">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                </div>
+            </div>
+            <div class="eight wide column">
+                <img src="{{ asset('images/me.jpg') }}" class="ui image">
+            </div>
+        </div>
+
+        <div class="ui black inverted vertical footer segment">
+            <div class="ui center aligned container">
+                <div class="ui stackable inverted grid">
+                    <div class="sixteen wide column">
+                        <h4 class="ui inverted header">Community</h4>
+                    </div>
+                </div>
+                <div class="ui inverted section divider"></div>
+                <div class="ui horizontal inverted small divided link list">
+                    <a target="_blank" href="" class="item">Free &amp; Open Source (MIT)</a>
+                </div>
             </div>
         </div>
     </div>

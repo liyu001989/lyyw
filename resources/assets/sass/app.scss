@@ -1,1 +1,18 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+img.full {
+    width: 100%;
+}
+
+.main-title {
+    color: white;
+    position: absolute;
+    display: block;
+    left: 40%;
+    top: 300px;
+}
+
+.ui.grid.no-padding {
+    .column {
+        padding: 0px;
+    }
+}
