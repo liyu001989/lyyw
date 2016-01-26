@@ -53,87 +53,93 @@
             </div>
         </div>
 
-        <div class="ui grid center">
+        <div class="ui grid">
             <img src="{{ asset('images/header.jpg') }}" class="ui image full">
             <div class="main-title">
                 <img src="{{ asset('images/flower.png') }}" class="ui image">
                 <div class="">LYYW MARRY</div>
                 <p>
-                <span style="letter-spacing:0.1em;">WEDDING PHOTOGRAPHY</span>
+                    <span style="letter-spacing:0.1em;">WEDDING PHOTOGRAPHY</span>
                 </p>
             </div>
-            </div>
+        </div>
 
-            <div class="ui grid">
-                <div class="eight wide column">
+        <div class="ui grid">
+            <div class="doubling two column row">
+                <div class="column">
                     <img src="{{ asset('images/me.jpg') }}" class="ui image">
                 </div>
-            <div class="eight wide column">
-                <div style="width: 350px">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
-                </div>
-                <div style="width: 350px">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
-                </div>
-                <div style="width: 350px">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                <div class="column">
+                    <div style="width: 350px">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </div>
+                    <div style="width: 350px">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </div>
+                    <div style="width: 350px">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="ui grid no-padding">
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
-            </div>
-            <div class="four wide column">
-                <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+            <div class="doubling four column row">
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
+                <div class="column">
+                    <img src="{{ asset('images/foo.jpg') }}" class="ui image full">
+                </div>
             </div>
         </div>
 
         <div class="ui grid">
-            <div class="eight wide column">
-                <div style="width: 350px">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+            <div class="doubling two column row">
+                <div class="column">
+                    <div style="width: 350px">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </div>
+                    <div style="width: 350px">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </div>
+                    <div style="width: 350px">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </div>
                 </div>
-                <div style="width: 350px">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                <div class="column">
+                    <img src="{{ asset('images/me.jpg') }}" class="ui image">
                 </div>
-                <div style="width: 350px">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
-                </div>
-            </div>
-            <div class="eight wide column">
-                <img src="{{ asset('images/me.jpg') }}" class="ui image">
             </div>
         </div>
 

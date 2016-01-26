@@ -4,3 +4,4 @@ Homestead.yaml
 Homestead.json
 .env
 public/assets/bower
+.DS_Store

@@ -6,7 +6,8 @@ img.full {
   position: absolute;
   display: block;
   left: 40%;
-  top: 300px; }
+  top: 300px;
+  text-align: center; }
 
 .ui.grid.no-padding .column {
   padding: 0px; }
