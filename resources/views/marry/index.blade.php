@@ -38,15 +38,16 @@
         <a class="item" href="#contact">CONTACT</a>
     </div>
     <div class="ui pusher">
-        <div class="ui borderless main menu" id="top">
+        <div class="ui large secondary masthead menu" id="top">
             <a class="toc item">
                 <i class="sidebar icon"></i>
             </a>
+            <div class="header item" href="#">
+                <img src="{{ asset('images/logo.png') }}" class="logo">
+                <sapn>LYYW</sapn>
+            </div>
             <div class="ui text container">
-                <div class="header item" href="#">
-                    <img src="{{ asset('images/logo.png') }}" class="logo">
-                LYYW
-                </div>
+
                 <a class="item" href="#about">ABOUT</a>
                 <a class="item" href="#portfolio">PORTFOLIO</a>
                 <a class="item" href="#contact">CONTACT</a>

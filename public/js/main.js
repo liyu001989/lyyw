@@ -13,6 +13,16 @@ require(['jquery', 'sementic'], function($) {
     $('.ui.sidebar')
         .sidebar('attach events', '.toc.item');
 
+    $('.masthead').visibility({
+        once: false,
+        onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+        },
+        onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+        }
+    });
+
     // 平滑滚动
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

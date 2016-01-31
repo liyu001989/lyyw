@@ -5,3 +5,4 @@ Homestead.json
 .env
 public/assets/bower
 .DS_Store
+public/css/app.css*
